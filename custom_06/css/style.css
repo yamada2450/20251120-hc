@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+* {
+    background: #ccc;
+    text-align: center;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+header, footer {
+    background: white;
+    padding: 20px;
+}
+
+main{
+    color: white;
+}
+
+section {
+    width: 900px;
+    margin: auto;
+}
+
+section + section {
+    margin-top: 100px;
+}
+
+section p {
+    width: 80%;
+    margin: auto;
+    line-height: 3;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 0.8em;
+    letter-spacing: 0.5em;
+}
+
+#first-view {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+#first-view img {
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    background: white;
+    border: 4px solid;
+    color: #212121;
+    width: 400px;
+    padding: 20px 0;
+    font-size: 20px;
+    margin: 40px auto 0;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1em;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border: 0.5em solid transparent;
+    border-left: 1em solid #212121;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: 40px auto 0;
+}
+
+.imgs img:nth-of-type(n + 2) {
+    margin-left: 20px;
+}
+
+.imgs img:nth-of-type(n + 5) {
+    margin-top: 20px;
+}
+
+.imgs img:nth-of-type(4n + 5) {
+    margin-left: 0;
+}
+
+#access {
+    width: 100%;
+}
+
+.gmap {
+    height: 500px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.gmap iframe {
+    width: 100%;
+    height: 100%;
+}
